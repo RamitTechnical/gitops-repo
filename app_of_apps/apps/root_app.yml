@@ -11,7 +11,7 @@ spec:
     path: apps   # Path where child app manifests are stored
   destination:
     server: https://172.31.25.233:33893  # Deploying inside the same cluster
-    namespace: argocd             # Applications (CRDs) must live in argocd namespace
+    namespace: default             # Applications (CRDs) must live in argocd namespace
   syncPolicy:
     automated:
       prune: true                 # Prune removed child apps
