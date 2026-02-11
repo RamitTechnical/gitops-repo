@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/RamitTechnical/gitops-repo.git    # Replace it with your forked repo
     targetRevision: main
-    path: declarative_approach/online_shop
+    path: apps/online_shop
   destination:
     server: https://172.31.6.84:33893   # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: frontend
