@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/RamitTechnical/gitops-repo.git  # Git repo
     targetRevision: main        # Branch to watch
-    path: app/nginx     # Path in repo with manifests
+    path: apps/nginx     # Path in repo with manifests
   destination:
     server: <added_argocd_cluster_server_url>  # Target cluster, run `argocd cluster list` to see
     namespace: frontend          # Namespace inside that cluster
