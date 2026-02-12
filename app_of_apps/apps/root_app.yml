@@ -10,7 +10,7 @@ spec:
     targetRevision: main        # Git branch to track
     path: application   # Path where child app manifests are stored
   destination:
-    server: https://172.31.25.233:33893  # Deploying inside the same cluster
+    server: https://kubernetes.default.svc  # Deploying inside the same cluster
     namespace: argocd             # Applications (CRDs) must live in argocd namespace
   syncPolicy:
     automated:
